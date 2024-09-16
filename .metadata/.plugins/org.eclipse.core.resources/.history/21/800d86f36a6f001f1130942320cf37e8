@@ -1,0 +1,46 @@
+package Day2_Exercises;
+
+public class Account {
+	long accNum;
+	double balance;
+	Person accHolder;
+
+	public Account(String name,double balance, Person accHolder) {
+		
+		this.accHolder=accHolder;
+		this.balance=balance;
+		accNum = (int) (Math.random() * 5677) + 82522;
+	}
+
+	public long getAccNum() {
+		return accNum;
+	}
+
+//	public void setAccNum(long accNum) {
+//		this.accNum = accNum;
+//	}
+	public Person getAccHolder() {
+		return accHolder;
+	}
+
+	public void setAccHolder(Person accHolder) {
+		this.accHolder = accHolder;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+	void deposit(double n) {
+		balance = balance + n;
+	}
+
+	void withdraw(double n) {
+		balance = balance - n;
+	}
+
+	double getBalance() {
+		return balance;
+	}
+
+}

@@ -1,0 +1,9 @@
+package d2;
+
+public class q4c {
+	
+	public q4c(){
+		System.out.println("B constructor");
+	}
+
+}

@@ -1,0 +1,36 @@
+package col_sort;
+
+import java.util.HashMap;
+
+public class M5 {
+
+	public static void main(String[] args) {
+		
+		HashMap<String,Integer> m=new HashMap<String, Integer>();
+		
+		String[] words= {"apple", "banana", "apple", "orange", "banana", "grape",
+	            "grape", "apple", "grape", "orange", "banana", "apple",
+	            "grape", "orange", "mango"};
+		
+        for (String word : words) {
+        	 
+            // Asking whether the HashMap contains the
+            // key or not. Will return null if not.
+            Integer integer = m.get(word);
+ 
+            if (integer == null)
+                // Storing the word as key and its
+                // occurrence as value in the HashMap.
+                m.put(word, 1);
+ 
+            else {
+                // Incrementing the value if the word
+                // is already present in the HashMap.
+                m.put(word, integer + 1);
+            }
+        }
+        System.out.println(m);
+
+	}
+
+}

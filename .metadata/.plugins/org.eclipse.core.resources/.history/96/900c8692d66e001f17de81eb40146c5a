@@ -1,0 +1,26 @@
+package com;
+
+import java.util.Scanner;
+
+public class A4 {
+	
+	public static boolean isPrime(int m) {
+		for(int i=2 ; i<=Math.sqrt(m) ;  i++) {
+			if(m%i==0)return false;
+		}
+		return true;
+	}
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		int number=input.nextInt();
+		
+		for(int i=2 ; i< number ; i++) {
+			if(isPrime(i)) {
+				System.out.print(i+"  ");
+			}
+		}
+
+	}
+
+}

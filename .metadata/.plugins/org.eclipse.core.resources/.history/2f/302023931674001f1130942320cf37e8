@@ -1,0 +1,6 @@
+package fi;
+
+public interface ICalculate {
+
+	public void cal(String s);
+}

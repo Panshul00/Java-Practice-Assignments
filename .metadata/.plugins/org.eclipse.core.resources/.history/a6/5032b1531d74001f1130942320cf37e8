@@ -1,0 +1,15 @@
+package col_sort;
+
+import java.util.HashMap;
+
+public class M5 {
+
+	public static void main(String[] args) {
+		
+		HashMap<String,Integer> m=new HashMap<String, Integer>();
+		
+		
+
+	}
+
+}

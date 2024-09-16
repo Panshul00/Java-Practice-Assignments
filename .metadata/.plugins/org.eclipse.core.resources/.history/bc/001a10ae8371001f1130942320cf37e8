@@ -1,0 +1,31 @@
+package io;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+while((a=20)==20)
+
+public class IO1 {
+	
+	public static void main(String args[]) {
+		try {
+		FileReader fr=new FileReader("C:\\study\\sd.txt");
+		BufferedReader br=new BufferedReader(fr);
+		String str=null;
+		int ln=1;
+		while((str=br.readLine())!=null)  
+			ln=ln+2;
+		    System.out.println(ln);
+			System.out.println("Line "+ln+"  "+str);
+		
+		
+			ln=ln+2;
+			System.out.println(ln);
+		}
+		catch(Exception e){
+			System.out.println(e);
+			
+		}
+	}
+
+}

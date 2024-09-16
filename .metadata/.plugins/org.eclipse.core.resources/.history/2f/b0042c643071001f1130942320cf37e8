@@ -1,0 +1,11 @@
+package interest;
+public class SBAccount extends Account {
+	private double interestRate;
+	private double accountType;
+	
+	@Override
+	public double calculateInterest() {
+		
+	}
+
+}

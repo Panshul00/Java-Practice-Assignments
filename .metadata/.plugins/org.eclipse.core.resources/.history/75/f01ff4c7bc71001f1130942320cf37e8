@@ -1,0 +1,13 @@
+package collection_assignment;
+
+public class Set1 {
+	
+
+
+	private String name;
+	
+	public Set1(String name) {
+		this.name=name;
+	}
+
+}

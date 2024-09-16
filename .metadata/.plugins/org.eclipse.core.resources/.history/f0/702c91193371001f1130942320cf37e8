@@ -1,0 +1,24 @@
+package io;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class IO1 {
+	
+	public static void main(String args[]) {
+		try {
+		FileReader fr=new FileReader("C:\\study\\sd.txt");
+		BufferedReader br=new BufferedReader(fr);
+		String str=null;
+		int d=1;
+		while((str=br.readLine())!=null)
+			System.out.println("Line"+d+"  "+str);
+			d++;
+		}
+		catch(Exception e){
+			System.out.println(e);
+			
+		}
+	}
+
+}

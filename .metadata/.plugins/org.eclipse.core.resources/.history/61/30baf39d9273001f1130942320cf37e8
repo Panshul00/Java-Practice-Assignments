@@ -1,0 +1,28 @@
+package col_sort;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class M1 {
+
+	public static void main(String[] args) {
+		
+		@SuppressWarnings("all")
+		ArrayList<Integer> li=new ArrayList<Integer>();
+		
+		li.add(132);
+		li.add(32);
+		li.add(74);
+		li.add(11);
+		li.add(6);
+		li.add(82);
+		       
+        for (Integer s : li) {
+        	if(s%2==1) {
+        		System.out.println(s);
+        	}
+        }
+
+	}
+
+}

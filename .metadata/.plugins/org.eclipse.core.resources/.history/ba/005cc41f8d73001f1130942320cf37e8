@@ -1,0 +1,40 @@
+package col_sort;
+
+public class Student implements Comparable<Student> {
+	private String name;
+	private int marks;
+	
+	public Student(String name,int marks) {
+		
+		this.name=name;
+		this.marks=marks;
+	}
+	
+	public void setName(String name) {
+		this.name=name;
+	}
+	public void setMarks(int marks) {
+		this.marks=marks;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public int getMarks() {
+		return marks;
+	}
+	
+	@Override
+	public String toString() {
+		return "Name - "+name+"\t Marks - "+marks;
+	}
+	
+	@Override
+	public int compareTo(Student s) {
+		
+		return s.marks.compareTo(this.marks);
+		
+	}
+	
+	
+}

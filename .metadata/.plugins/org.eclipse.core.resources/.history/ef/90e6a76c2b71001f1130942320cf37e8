@@ -1,0 +1,13 @@
+
+public class FDAccount extends Account {
+	private double interestRate;
+	private double amount;
+	private int noOFDays;
+	private int ageOfACHolder;
+	
+	@Override
+	public double calculateInterest() {
+		
+	}
+
+}

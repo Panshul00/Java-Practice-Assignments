@@ -1,0 +1,13 @@
+
+public class RDAccount extends Account {
+	private double interestRate;
+	private double amount;
+	private int noOfMonths;
+	private int monthlyAmount;
+	
+	@Override
+	public double calculateInterest() {
+		
+	}
+
+}

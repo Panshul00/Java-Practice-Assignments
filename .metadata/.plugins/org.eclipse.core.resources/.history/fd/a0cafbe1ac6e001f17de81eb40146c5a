@@ -1,0 +1,27 @@
+package com;
+
+import java.util.Scanner;
+
+//Exercise 3: The Fibonacci sequence is defined by the following rule. The first 2 values in the sequence are 1, 1. Every subsequent value is the sum of the 2 values preceding it. Write a Java program that uses both recursive and non-recursive functions to print the nth value of the Fibonacci sequence?
+
+public class A3 {
+
+	public static void main(String[] args) {
+		
+		Scanner input=new Scanner(System.in);
+		
+		int a=1,b=1;
+		
+		int c=0;
+		System.out.print(a+"  "+b);
+		int choice=input.nextInt();
+		for(int i=1 ; i<choice ; i++) {
+			c=a+b;
+			System.out.print("  "+c);
+			a=b;
+			b=c;
+		}
+
+	}
+
+}

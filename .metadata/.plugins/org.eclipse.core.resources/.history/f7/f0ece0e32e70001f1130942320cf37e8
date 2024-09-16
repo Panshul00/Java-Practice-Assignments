@@ -1,0 +1,22 @@
+package com.eis.pl;
+
+import com.eis.bean.Employee;
+import com.eis.service.EmployeeService;
+import com.eis.service.EmployeeServiceImpl;
+
+public class EmployeeMain {
+
+    public static void main(String[] args) {
+        EmployeeService service = new EmployeeServiceImpl();
+
+        // Get employee details from user
+        Employee employee = service.getEmployeeDetails();
+
+        // Find and set the insurance scheme based on employee's salary and designation
+        String insuranceScheme = service.findInsuranceScheme(employee);
+        employee.setInsuranceScheme(insuranceScheme);
+
+        // Display employee details including the assigned insurance scheme
+        service.displayEmployeeDetails(employee);
+    }
+}

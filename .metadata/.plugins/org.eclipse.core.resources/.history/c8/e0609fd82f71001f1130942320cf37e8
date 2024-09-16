@@ -1,0 +1,8 @@
+
+public abstract class Account {
+	private double interestRate;
+	private double amount;
+	
+	abstract public double calculateInterest();
+
+}

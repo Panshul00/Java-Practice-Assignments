@@ -1,0 +1,8 @@
+package fi;
+
+public interface ICalculate2 {
+
+	public double cal(int x,int y);
+	
+	
+}

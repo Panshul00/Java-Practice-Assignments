@@ -1,0 +1,19 @@
+package fi;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		MM obj=new MM();
+		ICalculate iobj=obj::m1;
+		
+		double cc=iobj.cal(2,5);
+		System.out.println(cc);
+		
+		
+		
+
+	}
+
+}

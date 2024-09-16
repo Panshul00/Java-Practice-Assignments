@@ -1,0 +1,13 @@
+package io;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int a=0;
+		if((a=18)==20)
+			System.out.println("dwedwd");
+		else
+				System.out.println("Fail");
+	}
+
+}

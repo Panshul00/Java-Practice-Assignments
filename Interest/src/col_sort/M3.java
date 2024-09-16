@@ -1,0 +1,36 @@
+package col_sort;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class M3 {
+
+    public static void main(String[] args) {
+        
+        ArrayList<Integer> li = new ArrayList<>();
+        
+        li.add(132);
+        li.add(32);
+        li.add(74);
+        li.add(11);
+        li.add(6);
+        li.add(83);
+        
+        Collections.sort(li);
+        System.out.println("Min element - "+li.get(0));
+        
+        System.out.println("Top Three - "+li.get(0)+"\t"+li.get(1)+"\t"+li.get(2));
+        
+        Collections.sort(li, Collections.reverseOrder());
+        
+        System.out.println("Descending orderN");
+        
+        for(Integer item : li) {
+        	System.out.println(item);
+        }
+        
+        
+        
+       
+    }
+}
